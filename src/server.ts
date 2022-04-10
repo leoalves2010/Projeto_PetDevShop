@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(mainRoutes);
 
 app.use((req, res, next) => {
-    res.status(404).send('<h1>Página não encontrada! Erro 404.</h1>');
+    res.status(404).render('pages/404');
 })
 
 app.set('view engine', 'mustache');

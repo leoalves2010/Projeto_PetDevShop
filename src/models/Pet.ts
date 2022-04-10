@@ -130,7 +130,7 @@ const petsData: Pet[] = [
 ]
 
 export const Pet = {
-    getAllPet: (): Pet[] => {
+    getAllPets: (): Pet[] => {
         return petsData;
     },
 
